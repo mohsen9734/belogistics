@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Anuphan', sans-serif;
+}
+
+/* ---------------------------------Mobile Design--------------------------------- */
+.main__row-one {}
+
+.main__row-tow {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 33px;
+}
+
+.row-tow_first {
+    display: flex;
+}
+
+.first-box {
+    width: 100%;
+    background-color: orange;
+}
+
+.first-box-content {
+    color: #fff;
+    padding: .5em;
+    font-size: 1.5em;
+}
+
+.row-tow_second {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.second-box-one {
+    padding-bottom: 15px;
+}
+
+.box-one-content {
+    font-size: 2em;
+}
+
+.second-box-tow,
+.second-box-three,
+.second-box-four {
+    display: flex;
+    flex-direction: column;
+    padding-right: 35px;
+}
+
+.box-image {
+    display: flex;
+}
+
+.box-image-content {
+    max-width: 100%;
+}
+
+.box-title,
+.box-text {
+    margin-bottom: 15px;
+}
+
+.box-title-content {
+    font-size: 1.5em;
+}
+
+.box-text-content {
+    font-size: 1.5em;
+    color: #ccc;
+}
+
+.box-link-content {
+    text-decoration: none;
+    color: orange;
+    font-size: 1.5em;
+}
+
+/* ---------------------------------Tablet Design--------------------------------- */
+@media (min-width:767px) {
+    .main__row-one {}
+
+
+    .row-tow_first {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .first-box {
+        width: 50%;
+        background-color: orange;
+    }
+
+    .row-tow_second {
+        flex-direction: row;
+        justify-content: center;
+        border: 3px solid red;
+    }
+    
+    .second-box-one {
+        display: flex;
+        padding-bottom: 0;
+        flex-basis: 15%;
+        font-size: .9em;
+    }
+    
+    .box-one-content {
+        font-size: 3.5em;
+    }
+    
+    .second-box-tow,
+    .second-box-three,
+    .second-box-four {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0px;
+        padding-left: 50px;
+        flex-basis: 25%;
+    }
+    .box-image-content {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .box-title,
+    .box-text {
+        display: flex;
+        font-size: 1.5em;
+    }
+
+}
+
+/* ---------------------------------Laptop Design--------------------------------- */
+@media (min-width:1240px) {
+    .main__row-one {}
+
+    .main__row-tow {
+        padding: 0px 50px;
+    }
+}
