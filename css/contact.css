@@ -1,0 +1,109 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.map-image {
+    padding: 64px 32px;
+    background-color: #E4E6E8;
+    width: 100%;
+}
+.title {
+    padding: 32px;
+    background-color: #1A1B27;
+    text-align: center;    
+}
+.title__text {
+    font-size: 2.4rem;
+    color: #FFFFFF;
+}
+.title__text-modify {
+    color: #F5A701;
+    font-size: 2.4rem;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+.communication {
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 32px;
+}
+.communication__addresses {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.addresses__title {
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: left;
+    padding: 24px 0;
+}
+.addresses__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+}
+.top {
+    display: flex;
+    pad: 12px 0;
+    
+}
+.addresses__arrow-icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5A701;
+    border-radius: 50%;
+    
+}
+.address__box {
+    display: flex;
+    flex-direction: column;
+    padding: 0 28px;
+}
+.address__number {
+    font-size: 1.6rem;
+    color: #000000;
+    padding: 0 20px;
+    line-height: 100%;
+}
+.address_address {
+    font-size: 1.6rem;
+    color: #939797;
+    padding: 6px 20px;
+    
+}
+.address__email-telephone {
+    padding: 6px 20px;
+}
+.email-telephone {
+    font-size: 1.6rem;
+    color: #FCBA00;
+}
+.communication__message {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
