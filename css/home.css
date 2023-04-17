@@ -7,12 +7,33 @@
 }
 
 /* ---------------------------------Mobile Design--------------------------------- */
-.main__row-one {}
+.main__row-one {
+    /* display: flex;
+    flex-direction: column;
+    background-image: url(../assets/Images/Home/svg/background.svg);
+    background-size: contain;
+    background-position: center;
+    border: 1px solid red; */
+}
+
+.row-one_first {}
+
+.first-heading {}
+
+.first-logistics-content {}
+
+.img-wrapper {}
+
+.first-img-one {}
+
+.first-img-tow {}
+
 
 .main__row-tow {
     display: flex;
     flex-direction: column;
     padding: 0px 33px;
+    padding-bottom: 50px;
 }
 
 .row-tow_first {
@@ -66,11 +87,11 @@
 }
 
 .box-title-content {
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
 .box-text-content {
-    font-size: 1.5em;
+    font-size: 1em;
     color: #ccc;
 }
 
@@ -79,6 +100,91 @@
     color: orange;
     font-size: 1.5em;
 }
+
+.main__row-three {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 33px;
+    background-color: #F7F9FA;
+}
+
+.row-three-first {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-three-first-box {
+    display: flex;
+    width: 40%;
+}
+
+.first-content {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.first-content-span {
+    display: inline-flex;
+    font-size: inherit;
+    color: orange;
+    margin-right: 20px;
+}
+
+.first-img-wrapper {
+    display: flex;
+}
+
+.first-img-content {
+    width: 100%;
+}
+
+.second-content {
+    font-size: 2em;
+    margin: 30px 0;
+}
+
+.second-row-one {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-one-box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.box-img-wrapper {
+    display: flex;
+}
+
+.box-img-content {
+    display: flex;
+}
+
+.box-heading-content {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.box-tex-content {
+    font-size: 1.2em;
+    color: #575757;
+}
+
+.second-row-tow {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-tow-box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+
+
 
 /* ---------------------------------Tablet Design--------------------------------- */
 @media (min-width:767px) {
@@ -99,20 +205,19 @@
     .row-tow_second {
         flex-direction: row;
         justify-content: center;
-        border: 3px solid red;
-    }
-    
+     }
+
     .second-box-one {
         display: flex;
         padding-bottom: 0;
         flex-basis: 15%;
         font-size: .9em;
     }
-    
+
     .box-one-content {
-        font-size: 3.5em;
+        font-size: 2.5em;
     }
-    
+
     .second-box-tow,
     .second-box-three,
     .second-box-four {
@@ -122,16 +227,53 @@
         padding-left: 50px;
         flex-basis: 25%;
     }
+
     .box-image-content {
         max-width: 100%;
         margin-bottom: 40px;
     }
-    
+
     .box-title,
     .box-text {
         display: flex;
         font-size: 1.5em;
     }
+
+
+   .main__row-three {
+        flex-direction: row;
+    }
+
+    .row-three-first-box {
+        width: 50%;
+    }
+
+
+    .row-three-second {
+        margin-left: 40px;
+    }
+
+    .row-one-box {
+        flex-basis: 50%;
+        margin: 20px;
+    }
+
+    .box-heading-content {
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+
+    .row-tow-box {
+        margin: 20px;
+        flex-basis: 50%;
+    }
+
+
+
+
+
+
+
 
 }
 
@@ -142,4 +284,5 @@
     .main__row-tow {
         padding: 0px 50px;
     }
+    
 }
