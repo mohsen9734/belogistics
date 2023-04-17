@@ -48,19 +48,19 @@
     align-items: center;
 
 }
-.addresses__title {
+.communication__titles {
     width: 100%;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #000000;
     text-align: left;
-    padding: 24px 0;
+    padding: 16px 0;
 }
 .addresses__box {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 16px 0;
+    padding: 20px 0;
 }
 .top {
     display: flex;
@@ -91,11 +91,11 @@
 .address_address {
     font-size: 1.6rem;
     color: #939797;
-    padding: 6px 20px;
+    padding: 8px 20px;
     
 }
 .address__email-telephone {
-    padding: 6px 20px;
+    padding: 8px 20px;
 }
 .email-telephone {
     font-size: 1.6rem;
@@ -106,4 +106,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.description__box {
+    width: 100%;
+    
+}
+.description__p {
+    font-size: 1.6rem;
+    color: #939797;
+    padding: 8px 0;
+}
+.delivery-image {
+    width: 240px;
+    padding: 32px 8px;
+
 }
