@@ -8,12 +8,14 @@
 
 /* ---------------------------------Mobile Design--------------------------------- */
 .main__row-one {
-    /* display: flex;
-    flex-direction: column;
-    background-image: url(../assets/Images/Home/svg/background.svg);
-    background-size: contain;
-    background-position: center;
-    border: 1px solid red; */
+    /* background-image: url(../assets/Images/Home/svg/background.svg); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* overflow: hidden; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* position: absolute; */
+    border: 3px solid red;
 }
 
 .row-one_first {}
@@ -183,7 +185,91 @@
     margin: 20px 0;
 }
 
+.main__row-four {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 33px;
+}
 
+.row-four-first {
+    display: flex;
+    background-color: orange;
+}
+
+.four-first-content {
+    color: #fff;
+    padding: .5em 1em;
+    font-size: 2em;
+}
+
+.row-four-second {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.four-second-box-one {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+}
+
+.four-second-conetent-one,
+.four-second-conetent-tow {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.four-span {
+    color: #F5A700;
+    font-size: inherit;
+}
+
+.four-second-conetent-three {
+    color: #8d8e90;
+    margin: 20px 0;
+}
+
+.four-linkbox {
+    display: flex;
+}
+
+.four-link {
+    margin-right: 10px;
+    display: flex;
+    text-decoration: none;
+    color: orange;
+    font-size: 1.2em;
+}
+
+.four-second-box-tow {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    padding: 15px;
+    margin: 20px 5px;
+    background-color: #f0f0f0;
+}
+
+.social-facebook,
+.social-googleplus,
+.social-twiteer,
+.social-play,
+.social-linkedin {
+    color: #444444;
+    font-size: 2em;
+    transition: all .2s linear;
+}
+.social:hover .social-facebook,
+.social:hover .social-googleplus,
+.social:hover .social-twiteer,
+.social:hover .social-play,
+.social:hover .social-linkedin {
+    color: #F5A700;
+}
 
 
 /* ---------------------------------Tablet Design--------------------------------- */
@@ -205,7 +291,7 @@
     .row-tow_second {
         flex-direction: row;
         justify-content: center;
-     }
+    }
 
     .second-box-one {
         display: flex;
@@ -240,7 +326,7 @@
     }
 
 
-   .main__row-three {
+    .main__row-three {
         flex-direction: row;
     }
 
@@ -252,7 +338,9 @@
     .row-three-second {
         margin-left: 40px;
     }
-
+.second-row-one,.second-row-tow{
+    flex-direction: row;
+}
     .row-one-box {
         flex-basis: 50%;
         margin: 20px;
@@ -268,12 +356,20 @@
         flex-basis: 50%;
     }
 
+    .row-four-first {
+        margin-left: auto;
+        width: 50%;
+    }
 
+    .row-four-second {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-
-
-
-
+    .four-second-box-one,.four-second-box-tow {
+        flex-basis: 50%;
+    }
 
 }
 
@@ -284,5 +380,5 @@
     .main__row-tow {
         padding: 0px 50px;
     }
-    
+
 }
