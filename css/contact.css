@@ -95,11 +95,16 @@
     
 }
 .address__email-telephone {
-    padding: 8px 20px;
+    margin: 8px 20px;
+    display: flex;
+    align-items: center;
+    
 }
 .email-telephone {
+    cursor: pointer;
     font-size: 1.6rem;
-    color: #FCBA00;
+    color: #F5A701;
+    
 }
 .communication__message {
     width: 100%;
@@ -119,5 +124,81 @@
 .delivery-image {
     width: 240px;
     padding: 32px 8px;
+}
+.formholder {
+    width: 100%;
+}
+.form__title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #000000;
 
 }
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__box1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form__box2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.input {
+    width: 100%;
+    height: 36px;
+    margin: 12px 0;
+    background-color: #F9FAFA;
+    border: 1px solid #939797;
+    padding: 8px;
+    font-size: 1.6rem;
+    color: #939797;
+    outline: none;
+}
+.input::placeholder {
+    font-size: 1.6rem;
+    color: #939797;  
+}
+.input::selection {
+    background-color: #EFF0F0;
+}
+.textarea::placeholder {
+    font-size: 1.6rem;
+    color: #939797;
+}
+.textarea {
+    width: 100%;
+    height: 180px;
+    outline: none;
+    resize: none;
+    background-color: #F9FAFA;
+    border: 1px solid #939797;
+    padding: 8px;
+    margin: 12px 0;
+    font-size: 1.6rem;
+    color: #939797;
+}
+.form__button {
+    width: 100%;
+    height: 36px;
+    background-color: #F5A701;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    border: none;
+    margin: 16px 0;
+    cursor: pointer;
+}
+@media screen and (min-width: 776px) {
+   
+  }
+  @media screen and (min-width: 1240px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
