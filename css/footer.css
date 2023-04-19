@@ -1,0 +1,476 @@
+@import url(root.css);
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  /* padding: 100px 0px 0px 0px; */
+  background-color: rgb(26, 27, 39);
+}
+.container div{
+    color: #ACAEAC;
+}
+
+.footer_top {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content:space-evenly;
+  flex-direction: column;
+}
+
+.footer_down{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.bold {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  width: 15%;
+  /* padding: var(--footer-section-padding); */
+}
+
+/* .bold__title {
+  font-size: var(--title-font-size);
+  font-weight: var(--title-font-weight);
+  color: var(--title-font-color);
+  font-family: var(--title-font-family);
+  padding: 10px;
+} */
+
+.bold__subtitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.bold__subtitle_icon {
+  content: url("https://api.iconify.design/tabler/direction-sign.svg?color=white&width=10&height=10");
+  width: 10px;
+  height: 10px;
+}
+
+.bold__subtitle_text {
+  font-size: var(--subtitle-font-size);
+  font-family: var(--subtitle-font-family);
+  font-weight: var(--subtitle-font-weight);
+  color: var(--subtitle-font-color);
+  margin-left: 20px;
+  margin-top: -10px;
+}
+
+.bold__subtitle_text:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(245, 170, 8);
+}
+
+.subtitle_info {
+  font-size: var(--subtitle-font-size);
+  font-family: var(--subtitle-font-family);
+  font-weight: var(--subtitle-font-weight);
+  color: #707176;
+  padding: 10px;
+  margin-top: -10px;
+}
+.container {
+  position: relative;
+}
+
+.line {
+  height: 1px;
+  background-color: rgb(95, 87, 90);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 240px;
+}
+
+.footer_end {
+  font-size: var(--subtitle-font-size);
+  font-family: var(--subtitle-font-family);
+  font-weight: var(--subtitle-font-weight);
+  color: #707176;
+  padding: 100px 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer_refs {
+  font-size: var(--subtitle-font-size);
+  font-family: var(--subtitle-font-family);
+  font-weight: var(--subtitle-font-weight);
+  color: var(--subtitle-font-color);
+}
+.footer_refs:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(245, 170, 8);
+}
+
+.Social_Media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 8px;
+  padding: 10px;
+}
+.Social_media__skype {
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/skype.svg");
+  background-repeat: no-repeat;
+  filter: invert(1);
+}
+.Social_media__skype:hover {
+  cursor: pointer;
+  filter: brightness(50%);
+  transition: filter 0.2s ease-in-out;
+}
+.Social_media__facebook {
+  background-image: url("../img/facebook.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+.Social_media__facebook:hover {
+  cursor: pointer;
+  filter: brightness(50%);
+  transition: filter 0.2s ease-in-out;
+}
+
+.Social_media__youtube {
+  background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+.Social_media__youtube:hover {
+  cursor: pointer;
+  filter: brightness(50%);
+  transition: filter 0.2s ease-in-out;
+}
+.Social_media__linkedin {
+  background-image: url("../img/linkedin.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 20px;
+  filter: invert(1);
+}
+.Social_media__linkedin:hover {
+  cursor: pointer;
+  filter: brightness(50%);
+  transition: filter 0.2s ease-in-out;
+}
+
+/* Default styles for all screen sizes */
+.social-media {
+  margin-bottom: 1rem;
+}
+
+.Return_top {
+  content: url("https://api.iconify.design/ph/caret-up-light.svg?color=%2351525a&width=24&height=24");
+  height: 40px;
+  width: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Return_top {
+    content: url("https://api.iconify.design/ph/caret-up-light.svg?color=%2351525a&width=24&height=24");
+    height: 35px;
+    width: 30px;
+    position: absolute;
+    z-index: 999;
+    bottom: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer_end {
+    font-size: 13px;
+    font-family: var(--subtitle-font-family);
+    font-weight: var(--subtitle-font-weight);
+    color: #707176;
+    padding: 40px;
+    text-align: center;
+    position:relative ;
+    bottom: -10px;
+    margin-top: 20px;
+  }
+
+  .line {
+    height: 1px;
+    background-color: rgb(95, 87, 90);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 160px;
+  }
+
+  
+.bold__subtitle_text {
+  font-size: var(--subtitle-font-size);
+  font-family: var(--subtitle-font-family);
+  font-weight: var(--subtitle-font-weight);
+  color: var(--subtitle-font-color);
+  margin-left: 20px;
+  margin-top: -2px;
+}
+}
+
+@media only screen and (min-width: 1240px) {
+
+  .social-media {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    margin-bottom: 0;
+  }
+
+  .footer_end__social_Media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+  }
+  .footer_top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(26, 27, 39);
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .line {
+    height: 1px;
+    background-color: rgb(95, 87, 90);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -100px;
+  }
+
+  .bold__title {
+    font-size: 20px;
+    font-weight: var(--title-font-weight);
+    color: var(--title-font-color);
+    font-family: var(--title-font-family);
+    padding: 10px;
+  }
+
+  .bold__subtitle_text {
+    font-size: 13px;
+    font-family: var(--subtitle-font-family);
+    font-weight: 300;
+    color: var(--subtitle-font-color);
+    position: relative;
+    bottom: 18px;
+    left: 20px;
+  }
+
+  .line {
+    height: 1px;
+    background-color: #707176;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: none;
+  }
+
+  .footer_end {
+    font-size: 13px;
+    font-family: var(--subtitle-font-family);
+    font-weight: var(--subtitle-font-weight);
+    color: #707176;
+    padding: 100px;
+  }
+
+  .subtitle_info {
+    font-size: 13px;
+    font-family: var(--subtitle-font-family);
+    font-weight: 300;
+    color: #707176;
+    width: 250px;
+  }
+
+  .bold__subtitle_icon {
+    content: url("https://api.iconify.design/uil/arrow-circle-right.svg?color=%23a29794");
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+
+  .bold__subtitle {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  .footer_refs {
+    font-size: 13px;
+    font-family: var(--subtitle-font-family);
+    font-weight: var(--subtitle-font-weight);
+    color: var(--subtitle-font-color);
+  }
+  .container {
+    overflow: hidden;
+  }
+
+  .Return_top {
+    content: url("https://api.iconify.design/ph/caret-up-light.svg?color=%2351525a&width=24&height=24");
+    height: 40px;
+    width: 35px;
+    margin-left: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1240px) {
+  .social-media {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    margin-bottom: 0;
+  }
+
+  .footer_end__social_Media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .footer_top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(26, 27, 39);
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px;
+  }
+
+  .bold__title {
+    font-size: 20px;
+    font-weight: var(--title-font-weight);
+    color: var(--title-font-color);
+    font-family: var(--title-font-family);
+    padding: 10px;
+  }
+
+  .bold__subtitle_text {
+    font-size: 13px;
+    font-family: var(--subtitle-font-family);
+    font-weight: 300;
+    color: var(--subtitle-font-color);
+    position: relative;
+    bottom: 6px;
+    left: 8px;
+  }
+
+  .line {
+    height: 1px;
+    background-color: #707176;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 150px;
+    border: none;
+  }
+
+  .footer_end {
+    font-size: 18px;
+    font-family: var(--subtitle-font-family);
+    font-weight: var(--subtitle-font-weight);
+    color: #707176;
+    padding: 10px;
+  }
+
+  .subtitle_info {
+    font-size: 13px;
+    font-family: var(--subtitle-font-family);
+    font-weight: 300;
+    color: #707176;
+    width: 250px;
+  }
+
+  .bold__subtitle_icon {
+    content: url("https://api.iconify.design/uil/arrow-circle-right.svg?color=%23a29794");
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+  }
+
+  .bold__subtitle {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  .footer_refs {
+    font-size: 20px;
+    font-family: var(--subtitle-font-family);
+    font-weight: var(--subtitle-font-weight);
+    color: var(--subtitle-font-color);
+  }
+  .container {
+    overflow: hidden;
+  }
+
+  .footer_end {
+    font-size: 13px;
+    font-family: var(--subtitle-font-family);
+    font-weight: var(--subtitle-font-weight);
+    color: #707176;
+    padding: 100px;
+  }
+
+  .footer_refs {
+    font-size: 13px;
+    font-family: var(--subtitle-font-family);
+    font-weight: var(--subtitle-font-weight);
+    color: var(--subtitle-font-color);
+  }
+
+  .bold__subtitle {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 170px;
+  }
+
+  .bold {
+    display: flex;
+    flex-direction: column;
+  }
+}
