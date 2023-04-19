@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
 }
-.map-image {
+.background {
     padding: 64px 32px;
     background-color: #E4E6E8;
     width: 100%;
@@ -31,19 +31,15 @@
     font-family: 'Prompt', sans-serif;
     line-height: 26px;
 }
-.title__text-modify {
+.title__text-orange {
     color: #F5A701;
-    font-size: 2.3rem;
-    line-height: 26px;
-    font-family: 'Prompt', sans-serif;
-    font-weight: 700;
 }
 
 .image {
     width: 100%;
     height: 100%;
 }
-.communication {
+.body {
     width: 100%;
     background-color: #FFFFFF;
     display: flex;
@@ -51,14 +47,14 @@
     align-items: center;
     padding: 64px 32px;
 }
-.communication__addresses {
+.addresses {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
-.communication__titles {
+.body__titles {
     width: 100%;
     font-size: 2.3rem;
     font-weight: 700;
@@ -66,20 +62,23 @@
     font-family: 'Prompt', sans-serif;
     color: #000000;
     text-align: left;
-    padding: 16px 0;
+
+}
+.body__titles-address {
+    padding: 24px 0;
 }
 .addresses__box {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 12px 0;
+    padding: 16px 0;
 }
-.top {
+.address__header {
     display: flex;
     pad: 12px 0;
     
 }
-.addresses__arrow-icon {
+.address__arrow-icon {
     width: 28px;
     height: 28px;
     display: flex;
@@ -101,15 +100,14 @@
     padding: 0 20px;
     line-height: 100%;
 }
-.address_address {
+.address__location {
     font-size: 1.3rem;
     line-height: 19px;
     color: #939797;
     padding: 8px 20px;
-    
 }
 .address__email-telephone {
-    margin: 8px 20px;
+    margin: 6px 20px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -127,11 +125,14 @@
     align-items: flex-end;
     padding-left: 4px;
 }
-.communication__message {
+.contact-us {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.body__titles-contact {
+    padding: 8px 0;
 }
 .description__box {
     width: 100%;
@@ -236,7 +237,7 @@
     .container {
         align-items: center;
     }
-    .map-image {
+    .background {
         display: flex;
         justify-content: center;
 
@@ -248,32 +249,34 @@
         font-size: 2.6rem;
         line-height: 29px;
     }
-    .title__text-modify {
-        font-size: 2.6rem;
-        line-height: 29px;
-    }
-    .communication {
+    .body {
         width: 720px;
         flex-direction: row;
         justify-content: center;
         align-items: baseline;
         padding: 64px 0;
 
-    }.communication__addresses {
+    }.addresses {
         width: 33%;
     }
-    .communication__titles {
+    .address__number {
+        font-size: 1.6rem;
+    }
+    .body__titles {
         font-size: 2.6rem;
         line-height: 29px;
     }
-    .communication__message {
+    .body__titles-address {
+        padding: 44px 0;
+    }
+    .contact-us {
         width: 67%;
     }
     .description__box {
         display: flex;
         flex-direction: row;
         align-items: start;
-        padding-bottom: 52px;
+        padding-bottom: 32px;
     }
     .description {
         width: 50%;
@@ -303,16 +306,19 @@
 
     }
     .input {
-        margin: 4px 0;
+        margin: 6px 0;
     }
     .textarea {
-        margin: 4px 0;
+        margin: 6px 0;
     }
     .form__box1 {
         display: flex;
         flex-direction: row;
 
         
+    }
+    .form__button {
+        margin: 12px 0;
     }
 
 }
@@ -321,21 +327,28 @@
     .map {
         width: 1080px;
     }
-    .communication {
+    .body {
         width: 1080px;
     }
     .title__text {
         font-size: 3rem;
         line-height: 34px;
-
     }
-    .title__text-modify {
+    .body__titles {
         font-size: 3rem;
         line-height: 34px;
     }
-    .communication__titles {
-        font-size: 3rem;
-        line-height: 34px;
+    .body__titles-address {
+        padding: 36px;
+    }
+    .addresses__box {
+        padding: 20px;
+    }
+    .address__number {
+        font-size: 2rem;
+    }
+    .description__box {
+        padding-bottom: 12px;
     }
     .form__title {
         font-size: 3rem;
