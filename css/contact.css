@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 10px;
+    line-height: 22px;
+    font-family: 'Roboto Slab';
+    font-weight: 300;
 }
 .container {
     width: 100%;
@@ -16,17 +19,24 @@
     width: 100%;
 }
 .title {
-    padding: 32px;
+    width: 100%;
+    padding: 60px;
     background-color: #1A1B27;
-    text-align: center;    
+    text-align: center;   
 }
 .title__text {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
+    font-weight: 700;
     color: #FFFFFF;
+    font-family: 'Prompt', sans-serif;
+    line-height: 26px;
 }
 .title__text-modify {
     color: #F5A701;
-    font-size: 2.4rem;
+    font-size: 2.3rem;
+    line-height: 26px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
 }
 
 .image {
@@ -50,8 +60,10 @@
 }
 .communication__titles {
     width: 100%;
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 700;
+    line-height: 26px;
+    font-family: 'Prompt', sans-serif;
     color: #000000;
     text-align: left;
     padding: 16px 0;
@@ -60,7 +72,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 12px 0;
 }
 .top {
     display: flex;
@@ -75,7 +87,6 @@
     align-items: center;
     background-color: #F5A701;
     border-radius: 50%;
-    
 }
 .address__box {
     display: flex;
@@ -83,13 +94,16 @@
     padding: 0 28px;
 }
 .address__number {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
     font-size: 1.6rem;
     color: #000000;
     padding: 0 20px;
     line-height: 100%;
 }
 .address_address {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    line-height: 19px;
     color: #939797;
     padding: 8px 20px;
     
@@ -98,13 +112,20 @@
     margin: 8px 20px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 .email-telephone {
     cursor: pointer;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    line-height: 100%;
     color: #F5A701;
     
+}
+.arrow-icon {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 4px;
 }
 .communication__message {
     width: 100%;
@@ -114,10 +135,14 @@
 }
 .description__box {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 .description__p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    line-height: 19px;
     color: #939797;
     padding: 8px 0;
 }
@@ -129,7 +154,8 @@
     width: 100%;
 }
 .form__title {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
+    font-family: 'Prompt', sans-serif;;
     font-weight: 700;
     color: #000000;
 
@@ -157,19 +183,25 @@
     background-color: #F9FAFA;
     border: 1px solid #939797;
     padding: 8px;
-    font-size: 1.6rem;
+    line-height: 20px;
+    font-size: 1.4rem;
+    font-weight: 400;
     color: #939797;
     outline: none;
 }
 .input::placeholder {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 19px;
+    font-weight: 400;
     color: #939797;  
 }
-.input::selection {
+.input:focus {
     background-color: #EFF0F0;
 }
 .textarea::placeholder {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 20px;
+    font-weight: 400;
     color: #939797;
 }
 .textarea {
@@ -181,24 +213,138 @@
     border: 1px solid #939797;
     padding: 8px;
     margin: 12px 0;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 20px;
     color: #939797;
+}
+.textarea:focus {
+    background-color: #EFF0F0;
 }
 .form__button {
     width: 100%;
     height: 36px;
     background-color: #F5A701;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    font-weight: 400;
     color: #FFFFFF;
     border: none;
     margin: 16px 0;
     cursor: pointer;
 }
 @media screen and (min-width: 776px) {
-   
-  }
-  @media screen and (min-width: 1240px) {
-    body {
-      background-color: lightgreen;
+    .container {
+        align-items: center;
     }
-  }
+    .map-image {
+        display: flex;
+        justify-content: center;
+
+    }
+    .map {
+        width: 720px;
+    }
+    .title__text {
+        font-size: 2.6rem;
+        line-height: 29px;
+    }
+    .title__text-modify {
+        font-size: 2.6rem;
+        line-height: 29px;
+    }
+    .communication {
+        width: 720px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        padding: 64px 0;
+
+    }.communication__addresses {
+        width: 33%;
+    }
+    .communication__titles {
+        font-size: 2.6rem;
+        line-height: 29px;
+    }
+    .communication__message {
+        width: 67%;
+    }
+    .description__box {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        padding-bottom: 52px;
+    }
+    .description {
+        width: 50%;
+    }
+    .form__title {
+        padding: 12px 0;
+        font-size: 2.6rem;
+        line-height: 29px;
+    }
+    .delivery-image {
+        width: 50%;
+        padding: 16px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .delivery {
+        width: 252px;
+    }
+    .name {
+        width: 50%;
+        padding-right: 4px;
+       
+    }
+    .email {
+        width: 50%;
+        padding-left: 4px;
+
+    }
+    .input {
+        margin: 4px 0;
+    }
+    .textarea {
+        margin: 4px 0;
+    }
+    .form__box1 {
+        display: flex;
+        flex-direction: row;
+
+        
+    }
+
+}
+
+@media screen and (min-width: 1240px) {
+    .map {
+        width: 1080px;
+    }
+    .communication {
+        width: 1080px;
+    }
+    .title__text {
+        font-size: 3rem;
+        line-height: 34px;
+
+    }
+    .title__text-modify {
+        font-size: 3rem;
+        line-height: 34px;
+    }
+    .communication__titles {
+        font-size: 3rem;
+        line-height: 34px;
+    }
+    .form__title {
+        font-size: 3rem;
+        line-height: 34px;
+    }
+    .email-telephone {
+        line-height: 22px;
+    }
+    .description__p {
+        line-height: 22px;
+    }
+ }
