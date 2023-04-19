@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+@import url(root.css);
+:root {
+  /* font-family */
+  --header-font: "Prompt";
+  --services-description-font: "Roboto Slab";
+  --caption-font: "Roboto Slab";
+  /* font-weight */
+  --h1-font-weight: 700;
+  --h2-font-weight: 700;
+  --h3-font-weight: 500;
+  --caption-font-weight: 300;
+  --services-description-font-weight: 400;
+  --useful-accardion-font-weight: 700;
+  --contact-input-font-weight: 400;
+  --header-font-weight: 400;
+  --footer-font-weight: 300;
+  /* header1 */
+  --h1-mobile-font-size: 2.5rem;
+  --h1-tablet-font-size: 3.6rem;
+  --h1-desktop-font-size: 4.2rem;
+  /* header2 */
+  --h2--mobile-font-size: 1.8rem;
+  --h2--tablet-font-size: 2.6rem;
+  --h2-desktop-font-size: 3rem;
+  /* header3 */
+  --h3--mobile-font-size: 1.3rem;
+  --h3--tablet-font-size: 1.7rem;
+  --h3-desktop-font-size: 2rem;
+  /* caption-font-size */
+  --caption-font-size: 1.3rem;
+  /* description-font-size */
+  --services-description-mobile-font-size: 1.3rem;
+  --services-description-tablet-font-size: 1.4rem;
+  --services-description-desktop-font-size: 1.6rem;
+  /* accardion-font-weight */
+  --accardion-font-size: 1.3rem;
+  /* input-font-size: */
+  --input-font-size: 1.4rem;
+  /* header-font-size */
+  --header-font-size: 1.4rem;
+  /* footer-font-size */
+  --footer-font-size: 1.3rem;
+  /* colors */
+  --background1: #e3e6e8;
+  --background2: #1a1b27;
+  --background3: #f7f9fa;
+  --text-color: #8d8e90;
+  --header-color: #1a1b27;
+  --main-color1: #f5a700;
+}
+@font-face {
+  font-family: "Prompt-Bold";
+  src: url(../assets/Fonts/Prompt-Bold.ttf);
+}
+@font-face {
+  font-family: "Prompt-light";
+  src: url(../assets/Fonts/Prompt-Light.ttf);
+}
+@font-face {
+  font-family: "RobotoSlab-Light";
+  src: url(../assets/Fonts/static/RobotoSlab-Light.ttf);
+}
+@font-face {
+  font-family: "RobotoSlab-Regular";
+  src: url(../assets/Fonts/static/RobotoSlab-Regular.ttf);
+}
+.content {
+  width: 100vw;
+}
+.background-content {
+  width: 100%;
+  height: 660px;
+  background:url(/assets/Images/The\ Company/png/background.png) #e3e6e8 no-repeat;
+  background-position: 50% 101%;
+  padding: 165px 0 140px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-content {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 45px 0;
+  font-family: "prompt";
+}
+.section-title h1 {
+  line-height: 30px;
+  padding: 0 33px;
+  font-family: "Prompt-Bold";
+  font-size: var(--h1-mobile-font-size);
+}
+.section-caption {
+  padding: 0 30px;
+}
+.section-caption p,
+.section-caption-two p {
+  font-family: "RobotoSlab-Light";
+  color: var(--text-color);
+  font-size: var(--caption-font-size);
+  font-weight: var(--caption-font-weight);
+  margin: 15px 0 15px;
+}
+.boat-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -155px;
+  clear: both;
+  margin-bottom: 20px;
+}
+.boat-image img {
+  width: 80%;
+}
+.content-box-two {
+  width: 100%;
+  padding: 0 33px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-family: "prompt-bold";
+  font-size: var(--h2--mobile-font-size);
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #1a1b27;
+  font-weight: var(--h2-font-weight);
+}
+.section-caption-two {
+  padding: 0;
+  padding-right: 20px;
+}
+.progress-bars {
+  padding-right: 18px;
+  margin-top: 30px;
+}
+.turpis-title {
+  display: flex;
+  justify-content: space-between;
+}
+.progress-bars p {
+  font-family: "Prompt-light";
+  font-size: var(--caption-font-size);
+  font-weight: 500;
+}
+.label {
+  font-size: 1rem;
+  font-family: "Prompt-light";
+  color: #8d8e90;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0 5.5px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bar {
+  width: 100%;
+  height: 4px;
+  margin-top: 10px;
+  box-shadow: 0 0 0 0 rgba(41, 41, 41, 0) inset;
+  background: #e2e2e2;
+  border: 3px;
+}
+.progress {
+  width: 75%;
+  height: 4px;
+  background: #f5a700;
+}
+.sodales {
+  margin-top: 20px;
+}
+.sodales .progress {
+  width: 56%;
+}
+.Aenean {
+  margin-top: 20px;
+}
+.Aenean p {
+  margin-top: 15px;
+}
+.chart-image-mobile, .chart-image-tablet, .chart-image-desktop{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chart-image-tablet{
+  display: none;
+}
+.chart-image-desktop{
+  display: none;
+}
+.line {
+  width: 100%;
+  height: 0;
+  margin-top: 60px;
+  border: #e4e4e4 1px solid;
+}
+.information-company {
+  padding: 80px 33px 40px 33px;
+  background-color: #f7f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.information-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.information-title h2 {
+  margin-top: 35px;
+}
+.information-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.information-person {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.information-detail p {
+  font-family: "Prompt-light";
+  font-size: var(--caption-font-size);
+  color: #8d8e90;
+}
+.information-caption {
+  margin-top: 35px;
+}
+.person {
+  margin-top: 30px;
+}
+.person h4,
+h5 {
+  font-family: "Prompt-light";
+  margin-top: 10px;
+  font-size: var(--h3--mobile-font-size);
+  font-weight: 500;
+}
+.person p {
+  margin-top: 15px;
+  padding-right: 20px;
+}
+.person-email {
+  margin-top: 20px;
+}
+.person a,
+svg {
+  color: #f5a700;
+  font-family: "Prompt-light";
+  font-size: var(--h3--mobile-font-size);
+  text-decoration: none;
+  margin-top: 10px;
+}
+.person-email,
+.person-number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media only screen and (min-width: 766px){
+  .section-content {
+    padding: 0 130px;
+  }
+  .section-title h1 {
+    font-size: var(--h1-tablet-font-size);
+    line-height: 110%;
+  }
+  .content-box-two {
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+  }
+  h2 {
+    font-size: var(--h2--tablet-font-size);
+    margin-bottom: 30px;
+  }
+  .nullam {
+    width: 33%;
+    margin: 0;
+    padding: 0;
+  }
+  .Aenean {
+    width: 33%;
+    margin: 0;
+    padding: 0;
+  }
+  .Aenean h2 {
+    margin-right: 30px;
+  }
+  .Donec {
+    width: 33%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .chart-image-mobile{
+    display: none;
+  }
+  .chart-image-tablet{
+    display: block;
+  }
+  .information-title {
+    flex-direction: row;
+  }
+  .information-title h2 {
+    padding: 0 300px 0 30px;
+    line-height: 120%;
+  }
+  .information-detail {
+    flex-direction: row;
+    align-items: start;
+  }
+  .information-person {
+    flex-direction: row;
+  }
+  .information-caption {
+    width: 80%;
+    margin-top: 38px;
+    padding-right: 55px;
+  }
+  .person h4 {
+    font-size: var(--h3--tablet-font-size);
+    font-weight: bold;
+  }
+  .person-email{
+    flex-direction: column;
+    gap: 0;
+    align-items: normal;
+  }
+}
+@media only screen and (min-width: 1240px){
+  .section-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .section-title h1 {
+    font-size: var(--h1-desktop-font-size);
+    line-height: 110%;
+  }
+  .section-caption {
+    width: 90%;
+    line-height: 20px;
+    margin-left: 40px;
+  }
+  h2 {
+    font-size: var(--h2-desktop-font-size);
+  }
+  .chart-image-tablet{
+    display: none;
+  }
+  .chart-image-desktop{
+    display: block;
+  }
+  .nullam,
+  .Aenean,
+  .Donec {
+    padding: 20px;
+  }
+  .information-caption {
+    width: 50%;
+    margin-top: 45px;
+  }
+  .person h4 {
+    font-size: var(--h3-desktop-font-size);
+    font-weight: bold;
+  }
+  .person h5{
+    font-size: 1.7rem;
+  }
+}
+
