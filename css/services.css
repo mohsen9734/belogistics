@@ -1053,7 +1053,6 @@ p {
   background-color: #f5a700;
   transform: scaleX(0);
 }
-
 .header-tab:hover:not(.home-tab):after {
   transform: scaleX(1); /* show the line on hover */
 }
